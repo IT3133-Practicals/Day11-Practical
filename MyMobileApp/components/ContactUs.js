@@ -42,6 +42,11 @@ export default function ContactUs() {
               multiline
               numberOfLines={5} />
             </View>
+            <View>
+              <Button mode='contained' onPress={()=>NavigationPreloadManager.navigate('aboutus')}>
+                About Us
+              </Button>
+            </View>
             <Text>{name}</Text>
           </View>
           <View style={styles.footer}>
