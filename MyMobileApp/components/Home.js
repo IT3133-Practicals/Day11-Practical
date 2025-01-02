@@ -8,7 +8,7 @@ export default function Home() {
     <PaperProvider>
       <ScrollView>
         <View>
-          <Text variant="headlineLarge">Headline Large</Text>
+          <Text variant="headlineLarge">Home Page</Text>
           <Divider />
           <Text variant="bodyMedium">
             Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
