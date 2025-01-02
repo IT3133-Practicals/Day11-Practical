@@ -20,9 +20,14 @@ export default function App() {
           }}
         >
           <Stack.Screen
-            name="Home"
+            name="home"
             component={Home}
             options={{ title: 'Welcome' }}
+          />
+          <Stack.Screen
+            name="contact"
+            component={ContactUs}
+            options={{ title: 'Contact Us' }}
           />
         </Stack.Navigator>
       </NavigationContainer>
