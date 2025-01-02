@@ -13,8 +13,17 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator>
-          <Home />
+        <Stack.Navigator
+          initialRouteName="home"
+          screenOptions={{
+            headerStyle: { backgroundColor: '#e2bee2' },
+          }}
+        >
+          <Stack.Screen
+            name="Home"
+            component={Home}
+            options={{ title: 'Welcome' }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
