@@ -3,6 +3,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { PaperProvider } from 'react-native-paper';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+import Home from './components/Home';
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -12,10 +14,7 @@ export default function App() {
     <SafeAreaProvider>
       <NavigationContainer>
         <Stack.Navigator>
-          <View style={styles.container}>
-            <Text>Open up App.js to start working on your app!</Text>
-            <StatusBar style="auto" />
-          </View>
+          <Home />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
