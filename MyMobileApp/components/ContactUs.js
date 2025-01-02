@@ -5,7 +5,7 @@ import { PaperProvider, Text, Divider, TextInput, Button } from 'react-native-pa
 
 export default function ContactUs() {
   const [name,setName] = useState();
-  const navigate = useNavigation();
+  const navigation = useNavigation();
 
   return (
     <PaperProvider>
@@ -43,7 +43,7 @@ export default function ContactUs() {
               numberOfLines={5} />
             </View>
             <View>
-              <Button mode='contained' onPress={()=>NavigationPreloadManager.navigate('aboutus')}>
+              <Button mode='contained' onPress={()=>navigation.navigate('aboutus')}>
                 About Us
               </Button>
             </View>
